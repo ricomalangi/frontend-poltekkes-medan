@@ -1,0 +1,92 @@
+body {
+    background-color: #E8EEEC;
+    font-family: 'Inter', sans-serif;
+    color: #343531;
+}
+.brand-1 {
+    font-weight: bold;
+    color: #1E5DBC;
+}
+.brand-2 {
+    font-weight: bold;
+    color: #343531;
+}
+
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ECFAF8 !important;
+
+    .nav-link {
+        color: #343531;
+        font-weight: 500;
+        &.active{
+            font-weight: bold;
+            color: #1E5DBC;
+        }
+    }
+}
+.btn-login-register {
+    background-color: #1E5DBC;
+    color: white;
+
+    &:hover{
+        background-color: #3274d6;
+        color: white;
+    }
+}
+
+// section welcome
+.section-welcome {
+    background: linear-gradient(84deg, #38697B 1.67%, #71B6C6 99.59%);
+    padding: 50px 0 0;
+    .welcome-content {
+        color: white;
+        p {
+            font-size: 24px;
+
+        }
+        h5 {
+            margin-top: 38px;
+            font-weight: 500;
+            font-size: 34px;
+        }
+        h2 {
+            font-weight: 500;
+            font-size: 48px;
+        }
+    }
+    .welcome-image {
+        text-align: center;
+        img {
+            width: 80%;
+            background-size: cover;
+        }
+    }
+}
+// section featured
+.section-featured {
+    position: relative;
+    top: -85px;
+    .container {
+        height: 160px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .featured-detail {
+        padding: 20px;
+        text-align: center;
+        margin-top: 10px;
+        i {
+            font-size: 40px;
+            color: #1E5DBC;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: 500;
+            color: #343531;
+        }
+    }
+}
