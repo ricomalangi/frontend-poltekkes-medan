@@ -25,7 +25,10 @@ body {
 }
 .navbar .nav-link.active {
   font-weight: bold;
-  color: #1E5DBC;
+  color: #3976d1;
+}
+.navbar .nav-link:hover {
+  color: #3976d1;
 }
 
 .btn-login-register {
@@ -44,17 +47,26 @@ body {
 .section-welcome .welcome-content {
   color: white;
 }
-.section-welcome .welcome-content p {
-  font-size: 24px;
-}
 .section-welcome .welcome-content h5 {
-  margin-top: 38px;
-  font-weight: 500;
-  font-size: 34px;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 28px;
+  font-style: italic;
+  letter-spacing: 1.2px;
 }
 .section-welcome .welcome-content h2 {
   font-weight: 500;
   font-size: 48px;
+}
+.section-welcome .welcome-content .btn-buat-janji {
+  background-color: #1E5DBC;
+  padding: 20px 20px;
+  color: white;
+  margin-top: 30px;
+  box-shadow: 0px 0px 30px -6px rgb(30, 93, 188);
+}
+.section-welcome .welcome-content .btn-buat-janji:hover {
+  box-shadow: 0px 0px 44px 1px rgb(57, 118, 209);
 }
 .section-welcome .welcome-image {
   text-align: center;
@@ -87,4 +99,130 @@ body {
   font-size: 22px;
   font-weight: 500;
   color: #343531;
+}
+
+.section-intro {
+  margin-top: 80px;
+}
+.section-intro .intro-content h2 {
+  font-size: 42px;
+}
+.section-intro .intro-content p {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: justify;
+}
+.section-intro .intro-image {
+  text-align: center;
+}
+.section-intro .intro-image img {
+  width: 70%;
+  background-size: cover;
+}
+
+.section-statistik {
+  margin-top: 150px;
+  background-color: #1E5DBC;
+  padding: 45px 0 45px;
+  color: white;
+  text-align: center;
+}
+.section-statistik p {
+  display: flex;
+  align-items: center; /* Untuk membuat tulisan berada di tengah vertikal */
+  font-size: 28px;
+  font-weight: 500;
+}
+.section-statistik span {
+  font-size: 50px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.section-jadwal {
+  background-color: #FBFBFB;
+  padding-bottom: 120px;
+}
+.section-jadwal .jadwal-title {
+  margin-top: 100px;
+  margin-bottom: 52px;
+  text-align: center;
+}
+.section-jadwal .accordion-header {
+  color: white;
+}
+.section-jadwal .accordion-header button {
+  font-size: 24px;
+  padding: 32px;
+  font-weight: bold;
+  background-color: #1E5DBC;
+  color: white;
+}
+.section-jadwal .table {
+  font-size: 26px;
+}
+
+.section-dokter {
+  padding-bottom: 120px;
+}
+.section-dokter .dokter-title {
+  margin-top: 100px;
+  margin-bottom: 52px;
+  text-align: center;
+}
+.section-dokter .card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 22.8px 0px rgba(0, 0, 0, 0.15);
+}
+.section-dokter .card .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 14px;
+}
+.section-dokter .card .card-text {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: -2px;
+}
+.section-dokter .dokter-thumbnail {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.section-dokter .dokter-thumbnail:hover .dokter-image, .section-dokter .dokter-thumbnail:focus .dokter-image {
+  transform: scale(1.1);
+}
+.section-dokter .dokter-thumbnail .dokter-image {
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+footer {
+  background-color: #38697B;
+  color: white;
+}
+footer h5 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+footer .nav-item {
+  color: #D9D9D9;
+  font-size: 14px;
+}
+footer .nav-item a {
+  color: #D9D9D9;
+  text-decoration: none;
+}
+footer .nav-item a:hover {
+  color: #D9D9D9;
 }/*# sourceMappingURL=main.css.map */
