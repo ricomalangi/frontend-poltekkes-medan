@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="frontend/libraries/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="frontend/styles/main.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<span class="brand-1">Polkesmed</span><span class="brand-2">-Health Care</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link active" href="#">Dokter</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">Layanan</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a class="nav-link" href="#">Tentang Kami</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<a href="#" class="btn btn-login-register my-2 my-sm-0 px-3" type="submit">Login/Register</a>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<section class="section-header">
+		<div class="container py-4">
+			<div class="row">
+                <div class="col-md-12 col-lg-12 text-center">
+                    <h2>Dokter</h2>
+                </div>
+			</div>
+		</div>
+	</section>
+	<section class="section-page-dokter">
+		<div class="container">
+            <form class="row">
+                <div class="col-lg-6 col-sm-4">
+                    <select name="filter_poliklnik" class="form-select form-select-lg">
+                        <option selected disabled>Cari dokter berdasarkan poli...</option>
+                        <option value="">Poli Umum</option>
+                        <option value="">Poli Gigi</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-sm-2">
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-filter-dokter btn-lg mb-3 btn-block">Cari</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="d-grid">
+                        <a href="janji-dengan-dokter.html" class="btn btn-buat-janji btn-lg mb-3 btn-block">Buat janji dengan dokter</a>
+                    </div>
+                </div>
+            </form>
+            <hr>
+			<div class="row list-dokter">
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-sm-2 mb-lg-4">
+					<div class="card">
+						<div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="dokter-thumbnail">
+                                        <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg');"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="card-kategori-dokter">Dokter Umum</p>
+                                    <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                    <p class="card-text">Sel, 5 Nov | 09.00 - 17.00</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Link</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Jadwal</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Layanan</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tentang Kami</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Login/Register</a></li>
+					</ul>
+				</div>
+	
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Contact</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">Jl. Jamin Ginting KM. 13,5
+							Kel. Lau Cih Medan - Tuntungan</li>
+						<li class="nav-item mb-2">061-8368633</li>
+						<li class="nav-item mb-2">poltekkes-medan@yahoo.com</li>
+					</ul>
+				</div>
+	
+				<div class="col-md-5 offset-md-1 mb-3">
+					<form>
+						<h5>Jadwal Poliklinik</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">Poli umum - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+							<li class="nav-item mb-2">Poli gigi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+							<li class="nav-item mb-2">Poli KIA - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+							<li class="nav-item mb-2">Poli Fisioterapi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+							<li class="nav-item mb-2">Konsultasi Gizi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+	
+			<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+				<p>Copyright © 2023 Polkesmed Medan. All right reserved</p>
+			</div>
+		</div>
+	</footer>
+	<script src="frontend/libraries/jquery/jquery-3.7.1.min.js"></script>
+	<script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
