@@ -1,418 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="frontend/libraries/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="frontend/styles/main.css" />
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="frontend/libraries/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="frontend/styles/main.css">
-</head>
-
-<body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-				<span class="brand-1">Polkesmed</span><span class="brand-2">-Health Care</span>
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
-					<li class="nav-item mx-2">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="dokter.html">Dokter</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">Layanan</a>
-					</li>
-					<li class="nav-item mx-2">
-						<a class="nav-link" href="#">Tentang Kami</a>
-					</li>
-				</ul>
-				<form class="d-flex">
-					<a href="#" class="btn btn-login-register my-2 my-sm-0 px-3" type="submit">Login/Register</a>
-				</form>
-			</div>
-		</div>
-	</nav>
-	<section class="section-welcome">
-		<div class="container py-4">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 d-xl-flex flex-column justify-content-xl-center align-items-xl-start">
-					<div class="welcome-content">
-						<h2>POLKESMED HEALTH CARE</h2>
-						<h5>"Making Your Life Healthier and Happier"</h5>
-						<a href="janji-dengan-dokter.html" class="btn btn-lg btn-buat-janji">Janji Temu Dokter</a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="welcome-image">
-						<img src="frontend/images/hero-directur.png" class="img-fluid" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-featured">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 featured-detail">
-					<i class="far fa-calendar-check"></i>
-					<p>Janji Temu Dengan Dokter</p>
-				</div>
-				<div class="col-md-4 featured-detail">
-					<i class="fas fa-file-medical"></i>
-					<p>Histori Rekam Medis</p>
-				</div>
-				<div class="col-md-4 featured-detail">
-					<i class="fas fa-pills"></i>
-					<p>Pelayanan Kesehatan Terpadu</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-intro">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12 d-xl-flex flex-column justify-content-xl-center align-items-xl-start">
-					<div class="intro-content">
-						<h2>Selamat Datang di <br> Polkesmed Health Care</h2>
-						<p>Kami senang menyambut Anda di Polkesmed Health Care. Tim medis kami yang berpengalaman siap
-							membantu Anda dalam menerima perawatan kesehatan terbaik. Kami berkomitmen untuk memberikan
-							perawatan yang penuh perhatian dan ramah kepada setiap pasien. Terima kasih telah memilih
-							kami. Kami harap Anda memiliki pengalaman perawatan kesehatan yang positif dan pemulihan
-							yang cepat. Selamat datang kembali!</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="intro-image">
-						<img src="frontend/images/intro-image.png" class="img-fluid" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-statistik">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<p><span>35</span> Dokter Handal</p>
-				</div>
-				<div class="col-md-4">
-					<p><span>5</span> Poliklinik</p>
-				</div>
-				<div class="col-md-4">
-					<p><span>230</span> Pasien Berobat</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-jadwal">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="jadwal-title">Jadwal Praktek Poliklinik</h2>
-					<div class="accordion" id="accordionExample">
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									Poli Gigi
-								</button>
-							</h2>
-							<div id="collapseOne" class="accordion-collapse collapse show"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<table class="table text-center">
-										<thead>
-											<tr>
-												<th scope="col">Hari</th>
-												<th scope="col">Jam</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Senin</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Selasa</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Rabu</td>
-												<td>09.00-14.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									Poli Umum
-								</button>
-							</h2>
-							<div id="collapseTwo" class="accordion-collapse collapse"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<table class="table text-center">
-										<thead>
-											<tr>
-												<th scope="col">Hari</th>
-												<th scope="col">Jam</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Senin</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Selasa</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Rabu</td>
-												<td>09.00-14.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									Poli KIA (Kehamilan dan Pasang KB)
-								</button>
-							</h2>
-							<div id="collapseThree" class="accordion-collapse collapse"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<table class="table text-center">
-										<thead>
-											<tr>
-												<th scope="col">Hari</th>
-												<th scope="col">Jam</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Senin</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Selasa</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Rabu</td>
-												<td>09.00-14.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-									Fisioterapi
-								</button>
-							</h2>
-							<div id="collapseFour" class="accordion-collapse collapse"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<table class="table text-center">
-										<thead>
-											<tr>
-												<th scope="col">Hari</th>
-												<th scope="col">Jam</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Senin</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Selasa</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Rabu</td>
-												<td>09.00-14.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-									data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-									Konsultasi Gizi
-								</button>
-							</h2>
-							<div id="collapseFive" class="accordion-collapse collapse"
-								data-bs-parent="#accordionExample">
-								<div class="accordion-body">
-									<table class="table text-center">
-										<thead>
-											<tr>
-												<th scope="col">Hari</th>
-												<th scope="col">Jam</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Senin</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Selasa</td>
-												<td>09.00-14.00</td>
-											</tr>
-											<tr>
-												<td>Rabu</td>
-												<td>09.00-14.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-dokter">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="dokter-title">Dokter</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="card">
-						<div class="card-body">
-							<div class="dokter-thumbnail">
-								<div class="dokter-image"
-									style="background-image: url('frontend/images/doctor-list.jpg');"></div>
-							</div>
-							<h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
-							<p class="card-text">Dokter Umum</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card">
-						<div class="card-body">
-							<div class="dokter-thumbnail">
-								<div class="dokter-image"
-									style="background-image: url('frontend/images/doctor-list.jpg');"></div>
-							</div>
-							<h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
-							<p class="card-text">Dokter Umum</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card">
-						<div class="card-body">
-							<div class="dokter-thumbnail">
-								<div class="dokter-image"
-									style="background-image: url('frontend/images/doctor-list.jpg');"></div>
-							</div>
-							<h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
-							<p class="card-text">Dokter Umum</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="card">
-						<div class="card-body">
-							<div class="dokter-thumbnail">
-								<div class="dokter-image"
-									style="background-image: url('frontend/images/doctor-list.jpg');"></div>
-							</div>
-							<h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
-							<p class="card-text">Dokter Umum</p>
-						</div>
-					</div>
-				</div>
-			</div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a href="dokter.html" class="btn btn-lg btn-dokter-selengkapnya">Selengkapnya</a>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"> <span class="brand-1">Polkesmed</span><span class="brand-2">-Health Care</span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="dokter.html">Dokter</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="layanan.html">Layanan</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="login.html" class="btn btn-login-register my-2 my-sm-0 px-3" type="submit">Login/Register</a>
+                    </form>
                 </div>
             </div>
-		</div>
-	</section>
-	<footer class="py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-6 col-md-2 mb-3">
-					<h5>Link</h5>
-					<ul class="nav flex-column">
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Jadwal</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Layanan</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tentang Kami</a></li>
-						<li class="nav-item mb-2"><a href="#" class="nav-link p-0">Login/Register</a></li>
-					</ul>
-				</div>
-	
-				<div class="col-6 col-md-2 mb-3">
-					<h5>Contact</h5>
-					<ul class="nav flex-column">
-						<li class="nav-item mb-2">Jl. Jamin Ginting KM. 13,5
-							Kel. Lau Cih Medan - Tuntungan</li>
-						<li class="nav-item mb-2">061-8368633</li>
-						<li class="nav-item mb-2">poltekkes-medan@yahoo.com</li>
-					</ul>
-				</div>
-	
-				<div class="col-md-5 offset-md-1 mb-3">
-					<form>
-						<h5>Jadwal Poliklinik</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2">Poli umum - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
-							<li class="nav-item mb-2">Poli gigi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
-							<li class="nav-item mb-2">Poli KIA - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
-							<li class="nav-item mb-2">Poli Fisioterapi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
-							<li class="nav-item mb-2">Konsultasi Gizi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
-						</ul>
-					</form>
-				</div>
-			</div>
-	
-			<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-				<p>Copyright © 2023 Polkesmed Medan. All right reserved</p>
-			</div>
-		</div>
-	</footer>
-	<script src="frontend/libraries/jquery/jquery-3.7.1.min.js"></script>
-	<script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
-</body>
+        </nav>
+        <section class="section-welcome">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-xl-flex flex-column justify-content-xl-center align-items-xl-start">
+                        <div class="welcome-content">
+                            <h2>POLKESMED HEALTH CARE</h2>
+                            <h5>"Making Your Life Healthier and Happier"</h5>
+                            <a href="janji-dengan-dokter.html" class="btn btn-lg btn-buat-janji">Janji Temu Dokter</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="welcome-image">
+                            <img src="frontend/images/hero-directur.png" class="img-fluid" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 featured-detail">
+                        <i class="far fa-calendar-check"></i>
+                        <p>Janji Temu Dengan Dokter</p>
+                    </div>
+                    <div class="col-md-4 featured-detail">
+                        <i class="fas fa-file-medical"></i>
+                        <p>Histori Rekam Medis</p>
+                    </div>
+                    <div class="col-md-4 featured-detail">
+                        <i class="fas fa-pills"></i>
+                        <p>Pelayanan Kesehatan Terpadu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 d-xl-flex flex-column justify-content-xl-center align-items-xl-start">
+                        <div class="intro-content">
+                            <h2>
+                                Selamat Datang di <br />
+                                Polkesmed Health Care
+                            </h2>
+                            <p>
+                                Kami senang menyambut Anda di Polkesmed Health Care. Tim medis kami yang berpengalaman siap membantu Anda dalam menerima perawatan kesehatan terbaik. Kami berkomitmen untuk memberikan perawatan yang penuh perhatian dan
+                                ramah kepada setiap pasien. Terima kasih telah memilih kami. Kami harap Anda memiliki pengalaman perawatan kesehatan yang positif dan pemulihan yang cepat. Selamat datang kembali!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="intro-image">
+                            <img src="frontend/images/intro-image.png" class="img-fluid" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-statistik">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p><span>35</span> Dokter Handal</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><span>5</span> Poliklinik</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><span>230</span> Pasien Berobat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-jadwal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="jadwal-title">Jadwal Praktek Poliklinik</h2>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Poli Gigi</button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Hari</th>
+                                                    <th scope="col">Jam</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Senin</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Selasa</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rabu</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Poli Umum</button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Hari</th>
+                                                    <th scope="col">Jam</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Senin</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Selasa</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rabu</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Poli KIA (Kehamilan dan Pasang KB)</button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Hari</th>
+                                                    <th scope="col">Jam</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Senin</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Selasa</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rabu</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Fisioterapi</button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Hari</th>
+                                                    <th scope="col">Jam</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Senin</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Selasa</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rabu</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Konsultasi Gizi</button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Hari</th>
+                                                    <th scope="col">Jam</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Senin</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Selasa</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rabu</td>
+                                                    <td>09.00-14.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-dokter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="dokter-title">Dokter</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dokter-thumbnail">
+                                    <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg')"></div>
+                                </div>
+                                <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                <p class="card-text">Dokter Umum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dokter-thumbnail">
+                                    <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg')"></div>
+                                </div>
+                                <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                <p class="card-text">Dokter Umum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dokter-thumbnail">
+                                    <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg')"></div>
+                                </div>
+                                <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                <p class="card-text">Dokter Umum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dokter-thumbnail">
+                                    <div class="dokter-image" style="background-image: url('frontend/images/doctor-list.jpg')"></div>
+                                </div>
+                                <h5 class="card-title">Dina Yusdiana, S.,Kep,Ns</h5>
+                                <p class="card-text">Dokter Umum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="dokter.html" class="btn btn-lg btn-dokter-selengkapnya">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Link</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Jadwal</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Layanan</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tentang Kami</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Login/Register</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Contact</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Jl. Jamin Ginting KM. 13,5 Kel. Lau Cih Medan - Tuntungan</li>
+                            <li class="nav-item mb-2">061-8368633</li>
+                            <li class="nav-item mb-2">poltekkes-medan@yahoo.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Jadwal Poliklinik</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">Poli umum - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+                                <li class="nav-item mb-2">Poli gigi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+                                <li class="nav-item mb-2">Poli KIA - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+                                <li class="nav-item mb-2">Poli Fisioterapi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+                                <li class="nav-item mb-2">Konsultasi Gizi - Senin (10.00 - 14.00) | Selasa (10.00 - 14.00) | Rabu (10.00 - 14.00)</li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>Copyright © 2023 Polkesmed Medan. All right reserved</p>
+                </div>
+            </div>
+        </footer>
+        <script src="frontend/libraries/jquery/jquery-3.7.1.min.js"></script>
+        <script src="frontend/libraries/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
